@@ -1,0 +1,70 @@
+
+body {
+   
+    background-image: url(AnimeVanguardsLobby.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+
+}
+.container{
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  h1{
+    text-align: center;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .navbar{
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100px;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff#fff;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover:before{
+    width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    body{
+      flex-wrap: wrap;
+}
+}
